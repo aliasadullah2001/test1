@@ -1,3 +1,6 @@
+
+// https://difficult-calf-long-johns.cyclic.app/
+
 var HTTP_PORT = process.env.PORT || 8080;
 var express = require("express");
 var app = express();
@@ -18,10 +21,10 @@ app.get("/", (req, res) => {
     res.send(resText);
 });
 app.get("/test1", function (req, res){
-    var resText = "<mark><h2> Good Luck! </h2></mark> <br>";
-    resText += "<a> instruction: text Good luck! in the heading 1. Text color is red, and background color is yellow.</a><br><br>";
+    var resText ="<h2><mark>Good Luck! </h2></mark> <br>";
+    resText += "<a> instruction: text <q>Good luck!</q> in the heading 1. Text color is red, and background color is yellow.</a><br><br>";
     resText += "<a href='/'> <h3> Go home </h3><br><br>";
-    resText += "<a> instruction: Go Home is in heading 3. It is hyperlink directing user to the home route.</a><br><br>";
+    resText += "<a> instruction: <q>Go Home</q> is in heading 3. It is hyperlink directing user to the home route.</a><br><br>";
     res.send(resText);
 });
 
